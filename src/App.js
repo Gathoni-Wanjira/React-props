@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Product from "./Product";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // Add the product properties to apply to each product rendered.
+    
+    <div>
+<h1>Amazon product release.</h1>
+        
+      <Product
+        name="Amazon Echo"
+        description="Your AI assistant"
+        price={60.42}
+      />
+
+<Product
+        name="Iphone"
+        description="Latest apple release"
+        price={600.42}
+      />
+
+<Product
+        name="Microwave"
+        description="New lg product release"
+        price={140.42}
+      />
+
+<Product
+        name="Mirror "
+        description="Sticky wall mirrors"
+        price={87.42}
+      />
+
     </div>
   );
 }
