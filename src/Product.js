@@ -1,13 +1,17 @@
 import React from 'react'
+import ItemDescription from './ItemDescription'
 
-function Product(props) {
+function Product({name , description, price}) {
   return (
 //    Consume the product properties from App.js
+// Props destructuring occurs when we use the properties entries as parameters instead of generalizing all of them as just 'props'.
     <div>
-        <h1>{props.name}</h1>
-        <h2>{props.description}</h2>
-        <h3>${props.price}</h3>
+
+        <ItemDescription name= {name} description={description}/>
+        <h3>${price}</h3>
+        
     </div>
+
   )
 }
 
